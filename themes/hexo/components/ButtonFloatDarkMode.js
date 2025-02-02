@@ -7,7 +7,7 @@ import CONFIG from '../config'
  * 深色模式按钮
  */
 export default function ButtonDarkModeFloat() {
-  const { isDarkMode, updateDarkMode } = useGlobal()
+  const { isDarkMode, updateDarkMode, locale } = useGlobal()
 
   if (!siteConfig('HEXO_WIDGET_DARK_MODE', null, CONFIG)) {
     return <></>
@@ -25,6 +25,7 @@ export default function ButtonDarkModeFloat() {
 
   return (
     <div
+      title={isDarkMode ? locale.MENU.LIGHT_MODE : locale.MENU.DARK_MODE}
       onClick={handleChangeDarkMode}
       className={
         'justify-center items-center w-7 h-7 text-center transform hover:scale-105 duration-200'

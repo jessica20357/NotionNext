@@ -10,6 +10,7 @@ const ButtonJumpToComment = () => {
   if (!siteConfig('HEXO_WIDGET_TO_COMMENT', null, CONFIG)) {
     return <></>
   }
+  const { locale } = useGlobal()
 
   function navToComment() {
     if (document.getElementById('comment')) {
@@ -26,6 +27,7 @@ const ButtonJumpToComment = () => {
 
   return (
     <div
+      title={locale.COMMON.COMMENTS}
       className='flex space-x-1 items-center justify-center transform hover:scale-105 duration-200 w-7 h-7 text-center'
       onClick={navToComment}>
       <i className='fas fa-comment text-xs' />
