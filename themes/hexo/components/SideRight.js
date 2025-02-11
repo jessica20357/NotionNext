@@ -63,8 +63,7 @@ export default function SideRight(props) {
             <Catalog toc={post.toc} />
           </Card>
         )}
-
-        <InfoCard {...props} />
+        {!post && <InfoCard {...props} /> }
         {siteConfig('HEXO_WIDGET_ANALYTICS', null, CONFIG) && (
           <AnalyticsCard {...props} />
         )}
