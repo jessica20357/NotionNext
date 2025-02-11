@@ -85,7 +85,7 @@ export default function SideRight(props) {
           </Card>
         )}
 
-        <Announcement post={notice} />
+        {!post && <Announcement post={notice} />}
         {siteConfig('HEXO_WIDGET_LATEST_POSTS', null, CONFIG) &&
           latestPosts &&
           latestPosts.length > 0 && (
