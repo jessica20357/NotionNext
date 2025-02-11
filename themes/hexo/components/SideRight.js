@@ -49,7 +49,7 @@ export default function SideRight(props) {
   const { locale } = useGlobal()
 
   // 文章全屏处理
-  if (post && post?.fullWidth) {
+  if (post && post.fullWidth) {
     return null
   }
 
