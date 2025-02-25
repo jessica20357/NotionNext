@@ -11,17 +11,17 @@ module.exports = {
   // 代码主题 @see https://github.com/PrismJS/prism-themes
   PRISM_THEME_PREFIX_PATH:
   process.env.NEXT_PUBLIC_PRISM_THEME_PREFIX_PATH ||
-  'https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-light.min.css', // 默认浅色主题
+  'https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-gruvbox-light.min.css', // 默认浅色主题
   
   PRISM_THEME_SWITCH: process.env.NEXT_PUBLIC_PRISM_THEME_SWITCH || true, // 开启主题切换
 
   PRISM_THEME_LIGHT_PATH:
     process.env.NEXT_PUBLIC_PRISM_THEME_LIGHT_PATH ||
-    'https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-light.min.css', // 浅色模式主题（VS Code Light+ 风格）
+    'https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-gruvbox-light.min.css', // 浅色模式主题（VS Code Light+ 风格）
 
   PRISM_THEME_DARK_PATH:
     process.env.NEXT_PUBLIC_PRISM_THEME_DARK_PATH ||
-    'https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-vsc-dark-plus.min.css', // 深色模式主题（VS Code Dark+ 风格）
+    'https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-gruvbox-dark.min.css', // 深色模式主题（VS Code Dark+ 风格）
 
   CODE_MAC_BAR: process.env.NEXT_PUBLIC_CODE_MAC_BAR || false, // 代码左上角显示mac的红黄绿图标
   CODE_LINE_NUMBERS: process.env.NEXT_PUBLIC_CODE_LINE_NUMBERS || false, // 是否显示行号
